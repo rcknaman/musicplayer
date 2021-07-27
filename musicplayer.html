@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="musicplayer.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <!-- top-banner -->
+    <div class="top-bar">
+        <!-- logo -->
+        <div class="logo-container">
+            <div class="logo">
+                <img src="image/logo.jpg" alt="logo" height="50px" width="50px">
+            </div>
+        </div>
+        <!-- search-bar -->
+        <div class="search-bar-container">
+            <div class="search-bar">
+                <form>
+                    <button><i class="fas fa-search"></i></button>
+                    <input type="text" placeholder="Search...">
+                    <button><i class="fas fa-microphone"></i></button>
+                </form>
+            </div>
+        </div>
+        <!-- profile notification-->
+        <div class="profile-notification">
+            <!-- notification -->
+            <div class="notification"><i class="fas fa-bell fa-lg"></i></div>
+            <!-- profile -->
+            <div class="profile">
+                <button name="profile" value="profile" type="submit">
+                <img src="image/IMG_20200106_203827.jpg" alt="">
+                <div><p>Hi<br/>zoner !</p></div>
+                </button>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <p>Playlist</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Favorite</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Logout</p>
+                        </a>
+
+                    </li>
+                    <li>
+                        <a href="#">
+                            <p>Contact us</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- bottom banner -->
+    <div id="bottom-bar">
+        <div class="bottom-bar-img">
+            <div class="curr-song-size album">
+                <img src="image/small photos/Aashiqui-2-Hindi-2013-150x150.jpg" alt="song-logo" height="80px" width="80px">
+            </div>
+            <div class="player-text">
+                <a href="#">
+                    <marquee>Tum hi ho</marquee>
+                </a>
+            </div>
+        </div>
+        <div class="player">
+
+            <div class="small-screen-song-menu">
+                <a href="#">
+                    <p>&mlcp;</p>
+                </a>
+            </div>
+
+            <div class="main-player">
+                <div class="nav-bar">
+                    <div class="round"><a href="#"><i class="fas fa-step-backward fa-lg"></i></a></div>
+                    <div><a href="#"><i class="far fa-play-circle fa-2x"></i></a></div>
+                    <div class="round"><a href="#"><i class="fas fa-step-forward fa-lg"></i></a></div>
+                </div>
+                <div class="prog">
+                    <div class="prog-bar">
+                        <div class="progress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="player-misc">
+                <a href="#"><i class="fas fa-random fa-sm"></i></a>
+                <a href="#"><i class="far fa-heart fa-sm"></i></a>
+                <!-- <a href="#"><img src="image/kisspng-computer-icons-symbol-arrow-clip-art-repetition-5ad952792a3973.500875041524191865173.png" alt="" height="18px" width="18px"></a> -->
+                <a href="#"><img src="image/kisspng-clip-art-playlist-5b2a9a92ba8074.5035071515295187387639.png" alt="" height="18px" width="18px"></a>
+                <a href="#"><i class="fas fa-ban fa-sm"></i></a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="main-content">
+        <div class="huge-albums">
+            <div class="big">
+                <div><img src="image/big-photos/charts_Hindi00s_111137_20190906081657_500x500.jpg" alt=""></div>
+            </div>
+            <div class="big">
+                <div><img src="image/big-photos/charts_HindiChartbusters_108260_20200903065830_500x500.jpg" alt=""></div>
+            </div>
+            <div class="big">
+                <div><img src="image/big-photos/charts_RomanticHot40_125657_20200903045022_500x500.jpg" alt=""></div>
+            </div>
+            <div class="big">
+                <div><img src="image/big-photos/charts_TrendingToday_117032_20201124014400_500x500.jpg" alt=""></div>
+            </div>
+        </div>
+        <div>
+            <p>Latest Release</p>
+            <div class="latest-release">
+                <div class="latest-release-content">
+                    <div class="latest-release-content-img">
+                        <div><img src="image/small photos/Aashiqui-2-Hindi-2013-150x150.jpg" alt=""></div>
+                    </div>
+                    <div>
+                        <p>Aashqui-2</p>
+                    </div>
+                    <div class="latest-release-options">
+                        <button><i class="fas fa-ellipsis-h"></i></button>
+                        <!-- <ul>
+                        <li><p><i class="fas fa-play"></i>  Play Now</p></li>
+                        <li><p><i class="fas fa-plus"></i>Add to queue</p></li>
+                        <li><i class="fas fa-star"></i><p>Add to favorites</p></li>
+                        <li><i class="fas fa-info-circle"></i><p>Get Info</p></li>
+                    </ul> -->
+                        <p>4.05</p>
+                    </div>
+                </div>
+                <div class="latest-release-content">
+                    <div class="latest-release-content-img">
+                        <div><img src="image/small photos/Aashiqui-2-Hindi-2013-150x150.jpg" alt=""></div>
+                    </div>
+                    <div>
+                        <p>Aashqui-2</p>
+                    </div>
+                    <div class="latest-release-options">
+                        <button><i class="fas fa-ellipsis-h"></i></button>
+                        <p>4.05</p>
+                    </div>
+                </div>
+                <div class="latest-release-content">
+                    <div class="latest-release-content-img">
+                        <div><img src="image/small photos/Aashiqui-2-Hindi-2013-150x150.jpg" alt=""></div>
+                    </div>
+                    <div>
+                        <p>Aashqui-2</p>
+                    </div>
+                    <div class="latest-release-options">
+                        <button><i class="fas fa-ellipsis-h"></i></button>
+                        <p>4.05</p>
+                    </div>
+                </div>
+                <div class="latest-release-content">
+                    <div class="latest-release-content-img">
+                        <div><img src="image/small photos/Aashiqui-2-Hindi-2013-150x150.jpg" alt=""></div>
+                    </div>
+                    <div>
+                        <p>Aashqui-2</p>
+                    </div>
+                    <div class="latest-release-options">
+                        <button><i class="fas fa-ellipsis-h"></i></button>
+                        <p>4.05</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popular-artists-container">
+            <p>Popular Artists</p>
+            <div class="popular-artists">
+                <div class="artists">
+                    <div><img src="image/artists/Bruno_Mars_150x150.jpg" alt=""></div>
+                    <p>Bruno Mars</p>
+                </div>
+                <div class="artists">
+                    <div><img src="image/artists/Darshan_Raval_005_20201029161434_150x150.jpg" alt=""></div>
+                    <p>Darshan Raval</p>
+                </div>
+                <div class="artists">
+                    <div><img src="image/artists/Drake_150x150.jpg" alt=""></div>
+                    <p>Drake</p>
+                </div>
+                <div class="artists">
+                    <div><img src="image/artists/Mohit_Chauhan_150x150.jpg" alt=""></div>
+                    <p>Mohit Chauhan</p>
+                </div>
+                <div class="artists">
+                    <div><img src="image/artists/Shankar_Mahadevan_150x150.jpg" alt=""></div>
+                    <p>Shankar Mahadevan</p>
+                </div>
+                <div class="artists">
+                    <div><img src="image/artists/Vishal_Dadlani_150x150.png" alt=""></div>
+                    <p>Vishal Daldani</p>
+                </div>
+            </div>
+        </div>
+        <div class="stations">
+            <div class="bg" id="station1">
+                <div class="overlay">
+                    <a href="#">
+                        <p> 90s Duets</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bg" id="station2">
+                <div class="overlay">
+                    <a href="#">
+                        <p> All Day Shuffle 80s</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bg" id="station3">
+                <div class="overlay">
+                    <a href="#">
+                        <p> Best Of Dance Hindi</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bg" id="station4">
+                <div class="overlay">
+                    <a href="#">
+                        <p> Ek Number Hip Hop</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bg" id="station5">
+                <div class="overlay">
+                    <a href="#">
+                        <p> Hindi EDM</p>
+                    </a>
+                </div>
+            </div>
+            <div class="bg" id="station6">
+                <div class="overlay">
+                    <a href="#">
+                        <p> Only Khushiyan</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="genre">
+            <div class="bg1" id="g1">
+                <div class="overlay1">
+                    <p> Travelling</p><br>
+                    <p>&rarrw;</p>
+                </div>
+            </div>
+            <div class="bg1" id="g2">
+                <div class="overlay1">
+                    <p> Electronic</p><br>
+                    <p>&rarrw;</p>
+                </div>
+            </div>
+            <div class="bg1" id="g3">
+                <div class="overlay1">
+                    <p> party</p><br>
+                    <p>&rarrw;</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Latest in English</p>
+            <div class="latest-song-sequence">
+                <div>
+                    <div><img src="image/small photos/Almost-Love-English-2018-20180822230444-150x150.jpg" alt=""></div>
+                    <p>Almost Love</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/Alone-English-2017-20180131085202-150x150.jpg" alt=""></div>
+                    <p>Alone</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/At-My-Worst-feat-Kehlani--English-2021-20210205054341-150x150.jpg" alt=""></div>
+                    <p>At My Worst</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/bad-guy-with-Justin-Bieber--English-2019-20190712032930-150x150.jpg" alt=""></div>
+                    <p>bad guy</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/Bad-Habits-English-2021-20210623150859-150x150.jpg" alt=""></div>
+                    <p>Bad Habits</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/Echo-with-KSHMR--English-2021-20210518122008-150x150.jpg" alt=""></div>
+                    <p>Echo</p>
+                    <p>january 2021</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <p>Latest in Hindi</p>
+            <div class="latest-song-sequence">
+
+                <div>
+                    <div><img src="image/small photos/Ek-Bewafaa-Hindi-2021-20210504170909-150x150.jpg" alt=""></div>
+                    <p>Ek Bewafaa</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/Ek-Villain-Hindi-2014-150x150.jpg" alt=""></div>
+                    <p>Ek Villain</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/Garmi-Non-Stop-Dance-Mix-Hindi-2020-20201228161048-150x150.jpg" alt=""></div>
+                    <p>Garmi</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/Gully-Boy-Hindi-2019-20190225175507-150x150.jpg" alt=""></div>
+                    <p>january 2021</p>
+                    <p>january 2021</p>
+                </div>
+                <div>
+                    <div><img src="image/small photos/Is-Qadar-Hindi-2021-20210408051001-150x150.jpg" alt=""></div>
+                    <p>Is-Qadar</p>
+                    <p>january 2021</p>
+                </div>
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <div id="scroll-menu">
+        <div>
+            <div>
+                <div><img src="image/small photos/Aaj-Bhi-Hindi-2020-20200407000137-150x150.jpg" alt=""></div>
+                <p>Aaj-Bhi</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div id="active">
+            <div>
+                <div><img src="image/small photos/Aashiqui-2-Hindi-2013-150x150.jpg" alt=""></div>
+                <p>tum hi ho</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Ae-Dil-Hai-Mushkil-Hindi-2016-500x500.jpg" alt=""></div>
+                <p>Ae-Dil-Hai-Mushkil</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/After-Hours-English-2020-20200320041958-150x150.jpg" alt=""></div>
+                <p>After-Hours</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Akki-The-Hit-Machine-Romantic-Hindi-2015-150x150.jpg" alt=""></div>
+                <p>Akki-The-Hit-Machine</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Alien-English-2018-20180314231720-150x150.jpg" alt=""></div>
+                <p>Alien</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Almost-Love-English-2018-20180822230444-150x150.jpg" alt=""></div>
+                <p>Almost-Love</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Alone-English-2017-20180131085202-150x150.jpg" alt=""></div>
+                <p>Alone</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Alone-Pt-II-English-2019-20191210153050-150x150.jpg" alt=""></div>
+                <p>Alone-Pt-II</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Asal-Mein-Single-Hindi-2020-20200215121006-150x150.jpg" alt=""></div>
+                <p>Asal-Mein</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Astronaut-In-The-Ocean-English-2021-20210226023119-150x150.jpg" alt=""></div>
+                <p>Astronaut-In-The-Ocean</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/At-My-Worst-feat-Kehlani--English-2021-20210205054341-150x150.jpg" alt=""></div>
+                <p>At-My-Worst</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Aur-Pyaar-Karna-Hai-Hindi-2021-20210303123611-150x150.jpg" alt=""></div>
+                <p>Aur-Pyaar-Karna-Hai</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Baarish-Ki-Jaaye-Hindi-2021-20210325181900-150x150.jpg" alt=""></div>
+                <p>Baarish-Ki-Jaaye</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/bad-guy-with-Justin-Bieber--English-2019-20190712032930-150x150.jpg" alt=""></div>
+                <p>bad-guy</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Bad-Habits-English-2021-20210623150859-150x150.jpg" alt=""></div>
+                <p>Bad-Habits</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Badtameez-Hindi-2016-150x150.jpg" alt=""></div>
+                <p>Badtameez</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Bedardi-Se-Pyaar-Ka-Hindi-2021-20210608051001-150x150.jpg" alt=""></div>
+                <p>Bedardi-Se-Pyaar-Ka</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Bepanah-Pyaar-Hindi-2021-20210322053423-150x150.jpg" alt=""></div>
+                <p>Bepanah-Pyaar</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/BestOfDanceHindi_20210522033949_150x150.jpg" alt=""></div>
+                <p>BestOfDanceHindi</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Dil-Hai-Deewana-Hindi-2021-20210417051001-150x150.jpg" alt=""></div>
+                <p>Dil-Hai-Deewana</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Dusk-Till-Dawn-Radio-Edit--English-2017-20170905191749-150x150.jpg" alt=""></div>
+                <p>Dusk-Till-Dawn-Radio-Edit</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Dynamite-Daytime-Version--English-2020-20200916220042-150x150.jpg" alt=""></div>
+                <p>Dynamite-Daytime-Version</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Echo-with-KSHMR--English-2021-20210518122008-150x150.jpg" alt=""></div>
+                <p>Echo-with-KSHMR</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Ek-Bewafaa-Hindi-2021-20210504170909-150x150.jpg" alt=""></div>
+                <p>Ek-Bewafaa</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Ek-Villain-Hindi-2014-150x150.jpg" alt=""></div>
+                <p>gaaliyan</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Encore-Deluxe-Explicit-Version-2004-150x150.jpg" alt=""></div>
+                <p>Encore-Deluxe-Explicit-Version</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Encore-English-2016-20190419221937-150x150.jpg" alt=""></div>
+                <p>Encore</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Evolve-English-2017-20180716230950-150x150.jpg" alt=""></div>
+                <p>Evolve</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Garmi-Non-Stop-Dance-Mix-Hindi-2020-20201228161048-150x150.jpg" alt=""></div>
+                <p>Garmi</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Ghajini-2008-150x150.jpg" alt=""></div>
+                <p>kaise mujhe</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Gully-Boy-Hindi-2019-20190225175507-150x150.jpg" alt=""></div>
+                <p>apna time aaega</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Har-Funn-Maula-From-Koi-Jaane-Na--Hindi-2021-20210310051006-150x150.jpg" alt=""></div>
+                <p>Har-Funn-Maula-From-Koi-Jaane-Na</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Hate-Story-2-Hindi-2014-150x150.jpg" alt=""></div>
+                <p>Hate-Story-2</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/I-Hate-Luv-Storys-Hindi-2010-20190603134705-150x150.jpg" alt=""></div>
+                <p>I-Hate-Luv-Storys</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/I-Need-A-Doctor-Main-2011-150x150.jpg" alt=""></div>
+                <p>I-Need-A-Doctor-Main</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Is-Qadar-Hindi-2021-20210408051001-150x150.jpg" alt=""></div>
+                <p>Is-Qadar</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Ishaqzaade-Hindi-2012-20190329145834-150x150.jpg" alt=""></div>
+                <p>Ishaqzaade</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Jab-We-Met-2007-150x150.jpg" alt=""></div>
+                <p>ye ishq haye</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Jalebi-Baby-English-2021-20210413130421-150x150.jpg" alt=""></div>
+                <p>Jalebi-Baby</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Jee-Ni-Karda-From-Sardar-Ka-Grandson--Hindi-2021-20210425051001-150x150.jpg" alt=""></div>
+                <p>Jee-Ni-Karda-From-Sardar-Ka-Grandson</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Kalyug-Hindi-2005-20171123060242-150x150.jpg" alt=""></div>
+                <p>Kalyug</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Khamoshiyan-Hindi-2014-20190516123124-150x150.jpg" alt=""></div>
+                <p>Khamoshiyan</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Kismat-Konnection-Hindi-2008-20190612124629-150x150.jpg" alt=""></div>
+                <p>Kismat-Konnection</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Lakeeran-From-Hase-contenten-Dillruba--Hindi-2021-20210701051006-150x150.jpg" alt=""></div>
+                <p>Lakeeran-From-Hase-contenten-Dillruba</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Leave-The-Door-Open-English-2021-20210305023231-150x150.jpg" alt=""></div>
+                <p>Leave-The-Door-Open</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Love-Story-Taylor-s-Version--English-2021-20210212103906-150x150.jpg" alt=""></div>
+                <p>Love-Story-Taylor-s-Version</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Loveyatri-A-Journey-Of-Love-Hindi-2018-20181003-150x150.jpg" alt=""></div>
+                <p>Loveyatri-A-Journey-Of-Love</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Mahanayaka-Shri-Ganesh-2012-150x150.jpg" alt=""></div>
+                <p>Mahanayaka-Shri-Ganesh</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Main-Jis-Din-Bhulaa-Du-Hindi-2021-20210210191001-150x150.jpg" alt=""></div>
+                <p>Main-Jis-Din-Bhulaa-Du</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Mazaa-Hindi-2021-20210219143305-150x150.jpg" alt=""></div>
+                <p>/Mazaa-Hindi</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Mehendi-Wale-Haath-feat-Sanjana-Sanghi--Hindi-2021-20210114051001-150x150.jpg" alt=""></div>
+                <p>Mehendi-Wale-Haath</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Nadiyon-Paar-Let-the-Music-Play-Again-From-Roohi--Hindi-2021-20210303125809-150x150.jpg" alt=""></div>
+                <p>Nadiyon-Paar-Let-the-Music-Play-Again-From-Roohi</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Om-Shanti-Om-2007-150x150.jpg" alt=""></div>
+                <p>OmShantiOm</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Paani-Paani-Hindi-2021-20210603103127-150x150.jpg" alt=""></div>
+                <p>Paani-Paani</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Panghat-From-Roohi--Hindi-2021-20210518195819-150x150.jpg" alt=""></div>
+                <p>Panghat-From-Roohi</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Phenomenal-English-2015-150x150.jpg" alt=""></div>
+                <p>Phenomenal</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Planet-Her-English-2021-20210621224521-150x150.jpg" alt=""></div>
+                <p>Planet-Her-English</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Prince-Hindi-2010-20190612124629-150x150.jpg" alt=""></div>
+                <p>Prince</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Rabba-Mehar-Kari-Hindi-2021-20210213092052-150x150.jpg" alt=""></div>
+                <p>Rabba-Mehar-Kari</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Radhe-Your-Most-Wanted-Bhai-Hindi-2021-20210504140020-150x150.jpg" alt=""></div>
+                <p>Radhe-Your-Most-Wanted-Bhai</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Rasputin-English-2021-20210406163936-150x150.jpg" alt=""></div>
+                <p>Rasputin</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Revival-English-2017-20190419230945-150x150.jpg" alt=""></div>
+                <p>Revival</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Runaway-English-2015-150x150.jpg" alt=""></div>
+                <p>Runaway</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Saiyaan-Ji-Ft-Nushrratt-Bharuccha--Hindi-2021-20210127071005-150x150.jpg" alt=""></div>
+                <p>Saiyaan-Ji</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Se-orita-English-2019-20190822022326-150x150.jpg" alt=""></div>
+                <p>Se-orita</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Shanti-Hindi-2021-20210622051001-150x150.jpg" alt=""></div>
+                <p>Shanti</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Shape-of-You-English-2017-150x150.jpg" alt=""></div>
+                <p>Shape-of-You</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Sorry-English-2021-20210125151204-150x150.jpg" alt=""></div>
+                <p>Sorry</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/SOUR-English-2021-20210622205946-150x150.jpg" alt=""></div>
+                <p>SOUR</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Sugar-Brownies-English-2019-20190326005637-150x150.jpg" alt=""></div>
+                <p>Sugar-Brownies</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Taaron-Ke-Shehar-Hindi-2020-20200920035507-150x150.jpg" alt=""></div>
+                <p>Taaron-Ke-Shehar</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Taki-Taki-English-2018-20180927231455-150x150.jpg" alt=""></div>
+                <p>Taki-Taki</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Tera-Suit-Hindi-2021-20210308123622-150x150.jpg" alt=""></div>
+                <p>Tera-Suit</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Thoda-Thoda-Pyaar-Hindi-2021-20210212084501-150x150.jpg" alt=""></div>
+                <p>Thoda-Thoda-Pyaar</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Tu-Bhi-Sataya-Jayega-Hindi-2021-20210425053408-150x150.jpg" alt=""></div>
+                <p>Tu-Bhi-Sataya-Jayega</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Tujhe-Bhoolna-Toh-Chaaha-Hindi-2021-20210331051001-150x150.jpg" alt=""></div>
+                <p>Tujhe-Bhoolna-Toh-Chaaha</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Unforgettable-English-2009-150x150.jpg" alt=""></div>
+                <p>Unforgettable</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Up-English-2021-20210205060613-150x150.jpg" alt=""></div>
+                <p>Up</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Voicenotes-English-2018-20180504170044-150x150.jpg" alt=""></div>
+                <p>Voicenotes</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Wafa-Na-Raas-Aayee-Hindi-2021-20210423061001-150x150.jpg" alt=""></div>
+                <p>Wafa-Na-Raas-Aayee</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+        <div>
+            <div>
+                <div><img src="image/small photos/Yummy-English-2020-20200103035142-150x150.jpg" alt=""></div>
+                <p>Yummy</p>
+            </div>
+            <a href="#"><i class="far fa-heart fa-sm"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
